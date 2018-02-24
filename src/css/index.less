@@ -1,46 +1,46 @@
 .less-img {
-  background: url(../images/summer.jpg) no-repeat;
-  width: image-width('../images/summer.jpg');
-  height: image-height('../images/summer.jpg');
-  background-size: image-size('../images/summer.jpg');
+    background: url(../images/summer.jpg) no-repeat;
+    width: image-width('../images/summer.jpg');
+    height: image-height('../images/summer.jpg');
+    background-size: image-size('../images/summer.jpg');
 }
 
 @var: #999;
 .gogo {
-  margin: 10px 0;
-  width: 50px;
-  height: 50px;
-  background-color: @var;
-  &:hover {
-    background-color: fadeout(@var, 50%);
-  }
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    background-color: @var;
+    &:hover {
+        background-color: fadeout(@var, 50%);
+    }
 }
 
 @text-color: #000000;
 ul {
-  @text-color: #fff;
-  background-color: #03A9F4;
-  padding: 10px;
-  list-style: none;
+    @text-color: #fff;
+    background-color: #03A9F4;
+    padding: 10px;
+    list-style: none;
 
-  li {
-    color: @text-color;
-    border-radius: 3px;
-    margin: 10px 0;
-  }
+    li {
+        color: @text-color;
+        border-radius: 3px;
+        margin: 10px 0;
+    }
 }
 
 .circle(@size: 25px) {
-  background-color: #4CAF50;
-  border-radius: 100%;
-  width: @size;
-  height: @size;
+	background-color:  #4CAF50;
+	border-radius: 100%;
+	width: @size;
+	height: @size;
 }
 
 .small-circle {
-  .circle
+	.circle
 }
 
 .big-circle {
-  .circle(100px);
+	.circle(100px);
 }

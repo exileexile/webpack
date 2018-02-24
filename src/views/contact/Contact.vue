@@ -15,7 +15,7 @@
 	}
 </script>
 
-<style scoped lang="less">
+<style scoped>
 	.content {
 		color: #999;
 		.mobile {

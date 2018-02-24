@@ -4,7 +4,7 @@
 		<div class="image less-img"></div>
 		<div class="row">
 			<span>summer</span>
-			<span>vibe</span>
+			<span>vibes</span>
 		</div>
 		<ul>
 			<li>1</li>
@@ -27,7 +27,8 @@
 </template>
 
 <script>
-	import Gifffer from '../../lib/gifffer'
+	import Gifffer from 'src/lib/gifffer'
+	import Json from 'src/test'
 	export default {
 		data() {
 			return {
@@ -36,29 +37,30 @@
 		},
 		mounted() {
 			const VERSION = '1.0';
-			console.log('VERSION', VERSION, _.chunk(['a', 'b', 'c', 'd'], 2));
+			console.log('VERSION', VERSION, Json);
 			Gifffer.Gifffer();
 			$('.greeting').html('webpack ProvidePlugin: $ hello jquery');
 		}
 	}
 </script>
 
-<style scoped lang="less">
+<style scoped>
 	@import "../../css/index.scss";
 	.content {
 		color: #999;
+		.title {} /* this is useless css webpack will remove */
 		.image {
 			background: url(https://img-ads.csdn.net/2018/201802021120372434.gif) no-repeat;
 		 	height: 266px;
-		  width: 466px;
+		  width: 760px;
 		  transform: rotate(25deg);
 		}
 		.row {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			font-family: 华文琥珀; /* 加引号失效 */
 			font-size: 24px;
+			font-family: 华文琥珀;
 			span {
 				margin-right: 5px;
 				color: #999;
@@ -71,7 +73,10 @@
 		}
 		.greeting {
 			margin: 10px;
-			font-family: 华文琥珀; /* 加引号失效 */
+			font-family: 华文琥珀;
 		}
+	}
+	.unuse { /* this is useless css webpack will not remove */
+		 color: red; 
 	}
 </style>

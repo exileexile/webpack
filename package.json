@@ -4,17 +4,16 @@
   "description": "A webpack demo",
   "main": "",
   "scripts": {
-    "dev": "set type=dev & webpack-dev-server --open",
-    "build": "set type=build & webpack --config webpack.config.js"
+    "dev": "set type=dev && webpack-dev-server --config build/webpack.dev.config.js --open",
+    "build": "set type=build && webpack --config build/webpack.prod.config.js"
   },
   "keywords": [
     "vue"
   ],
-  "author": "summer vibe",
+  "author": "summer vibes",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
     "vue": "^2.5.13"
   },
   "devDependencies": {
@@ -23,7 +22,6 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^0.1.18",
-    "copy-webpack-plugin": "^4.4.1",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
@@ -36,6 +34,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.1.0",
     "precss": "^3.1.0",
+    "purify-css": "^1.2.5",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
     "url-loader": "^0.6.2",
