@@ -13,7 +13,6 @@
   "author": "summer vibes",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1",
     "vue": "^2.5.13"
   },
   "devDependencies": {
